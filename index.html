@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@200&family=Lexend:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+
+    <title>ReadMe Librería</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-dark min-vw-100">
+            <h2 class="p-3 text-white"><a href="./index.html"><img src="./images/logo.png" alt="ReadMe Librería"
+                        title="ReadMe Librería"></a></h2>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                        <i class="bi bi-shop mx-5" id="carritoContenedor">0</i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row w-25 pt-5 mr-4">
+                <input id="searchByText" type="text" class="form-control" size="40"
+                    placeholder="Buscá por Título, Categoría o Editorial">
+            </div>
+            <div class="row mt-5 justify-content-evenly" id="contenedor"></div>
+        </div>
+    </main>
+
+
+    <div class="container-xl">
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Carrito</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="cerrar">&nbsp;&times;&nbsp;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <span>Precio total: $</span>
+                        <p class="text-left" id="precioTotal"></p>
+                        <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                            Vaciar carrito <i class="bi bi-cart-x-fill"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary" id="comprarCarrito">
+                            Comprar <i class="bi bi-backspace-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

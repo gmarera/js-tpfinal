@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #678983;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #181D31 !important;
+}
+
+.modal-content {
+    background-color: #F0E9D2 !important;
+}
+
+.card {
+    background-color: #F0E9D2;    
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.modal-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.modal-footer {
+    font-weight: bolder;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.img-carrito {
+    width: 200px;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: white;
+}
+
+#precioTotal {
+    margin: 0;
+    padding: 0;
+}
+
+.cerrar {
+    font-size: 1.3rem;
+
+}
+
+.close {
+    background-color: white;
+    border-radius: 8px 12px;
+}
+
+#carritoContenedor {
+    font-size:large;
+}
+
